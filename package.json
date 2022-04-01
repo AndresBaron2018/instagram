@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "lint": "standard",
+    "lint-fix": "standard-fix",
     "dev": "webpack serve --mode development --open"
   },
   "repository": {
@@ -20,6 +22,7 @@
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.4",
     "html-webpack-plugin": "^5.5.0",
+    "standard": "^16.0.4",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
@@ -311,5 +314,13 @@
     "wildcard": "^2.0.0",
     "wrappy": "^1.0.2",
     "ws": "^8.5.0"
+  },
+  "standard": {
+    "ignore": [
+      "/api/**"
+    ]
+  },
+  "eslintConfig": {
+    "extends": ["./node_modules/standard/eslintrc.json"]
   }
 }

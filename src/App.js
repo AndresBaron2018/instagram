@@ -1,1 +1,1 @@
-console.log("You are rich")
+console.log('You are rich')
